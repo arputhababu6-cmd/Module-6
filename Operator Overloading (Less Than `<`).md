@@ -25,7 +25,24 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+class A:
 
+    def __init__(self, a):
+        self.a = a
+
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+
+ob1 = A(10)
+
+ob2 = A(20)
+
+print(ob1 < ob2)
 ## Output
+<img width="275" height="42" alt="image" src="https://github.com/user-attachments/assets/2d75f837-be8c-4fea-9c87-e3a7eec7c8d8" />
 
 ## Result
+The program demonstrates operator overloading by redefining the __lt__ dunder method, allowing the < symbol to return a custom string message instead of a standard boolean.
