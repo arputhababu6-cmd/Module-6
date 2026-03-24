@@ -14,7 +14,25 @@ To write a Python program that demonstrates class inheritance by creating a pare
 7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
 ## 💻 PROGRAM:
+class Fish:
 
+    def type(self):    
+        print("fish")
+
+class Shark(Fish):
+
+    def type(self):
+        print("shark")
+
+obj_goldfish = Fish()
+
+obj_hammerhead = Shark()
+
+for animal in (obj_goldfish, obj_hammerhead):
+
+    animal.type()
 ## OUTPUT
+<img width="137" height="77" alt="image" src="https://github.com/user-attachments/assets/057a1eb0-5d1f-43c6-aa69-312f20fa40dc" />
 
 ## RESULT
+The program demonstrates polymorphism by using a single loop to call the same method name on different objects, allowing the Shark class to provide its own specific output via method overriding.
