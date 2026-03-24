@@ -23,7 +23,17 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.__length = length
+        self.__breadth = breadth
+        
+        print(f"Private Length: {self.__length}")
+        print(f"Private Breadth: {self.__breadth}")
 
+rect = Rectangle(10, 5)
 ## Output
+<img width="246" height="80" alt="image" src="https://github.com/user-attachments/assets/2775a45a-8d20-41e0-a238-583070cb47a9" />
 
 ## Result
+The program uses double underscores to define private attributes within the Rectangle class, ensuring they are encapsulated and only directly accessible through the class's own methods.
